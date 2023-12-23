@@ -1,0 +1,369 @@
+:root {
+  --primary: #ffbb5c;
+
+  --secondary: #363062;
+
+  --color1: #900c3f;
+
+  --color2: C70039;
+
+  --bg: #1a120b;
+}
+
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  outline: none;
+
+  border: none;
+
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  background-color: var(--bg);
+
+  color: #ffff;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: initial;
+  align-items: end;
+  padding: 1.4rem 7%;
+  background-color: rgba(26, 18, 11, 1);
+  border-bottom: 1px solid var(--secondary);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-gambar {
+  display: flex;
+  width: 6%;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--secondary);
+}
+
+/* Hero Section */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* background-image: url("../img/foto-handphone-5.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 100rem;
+}
+
+.hero .video-bg {
+  position: absolute;
+  object-fit: cover;
+  bottom: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+}
+
+.hero .content h1 {
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 1);
+  line-height: 1.2;
+}
+
+.hero .tanda-panah {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  padding: 0.2rem 0;
+}
+
+.hero .tanda-panah a {
+  color: #ffff;
+  margin: 2rem;
+}
+
+.hero .tanda-panah a:hover {
+  color: var(--bg);
+}
+
+/* congratulations Section */
+
+.congratulations,
+.special {
+  padding: 4rem 7% 1.4rem;
+}
+
+.congratulations h2,
+.special h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.congratulations h2 span,
+.special h2 span {
+  color: var(--secondary);
+}
+
+.congratulations .row {
+  display: flex;
+}
+
+.congratulations .row .congratulations-img {
+  flex: 1 1 25rem;
+}
+
+.congratulations .row .congratulations-img img {
+  width: 100%;
+}
+
+.congratulations .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.congratulations .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+/* special Section */
+
+.special h2,
+.kontak h2 {
+  margin-bottom: 1rem;
+}
+
+.special p,
+.kontak p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.special .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.special .row .special-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.special .row .special-card img {
+  border-radius: 2%;
+  width: 68%;
+}
+
+/* .special .row .special-button {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 20rem;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 1.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 1);
+} */
+
+/* Foooter Section */
+
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+footer .sosial {
+  padding: 1rem 0;
+}
+
+footer .sosial a {
+  color: #ffff;
+  margin: 1rem;
+}
+
+footer .sosial a:hover,
+footer .links a:hover {
+  color: var(--bg);
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #ffff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .navbar .navbar-gambar {
+    display: flex;
+    justify-content: initial;
+    align-items: end;
+    flex-wrap: nowrap;
+  }
+
+  .navbar .navbar-logo {
+    display: flex;
+    justify-content: initial;
+    align-items: end;
+    flex-wrap: nowrap;
+  }
+
+  .hero .content .video-bg {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .hero .content h1 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .navbar .navbar-nav {
+    position: relative;
+    top: 100%;
+    right: -100%;
+    background-color: #ffff;
+    width: 30rem;
+    height: 98vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.9rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover:after {
+    transform: scaleX(0.2);
+  }
+
+  .congratulations .row {
+    flex-wrap: wrap;
+  }
+
+  .congratulations .row .congratulations-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .congratulations .row .content {
+    padding: 0;
+  }
+
+  .congratulations .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .congratulations .row .content p {
+    font-size: 1.6rem;
+  }
+
+  .special p {
+    font-size: 1.3rem;
+  }
+
+  /* .kontak .row {
+    flex-wrap: wrap;
+  }
+
+  .kontak .row .maps {
+    height: 30rem;
+  }
+
+  .kontak .row form {
+    padding-top: 0;
+  } */
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
